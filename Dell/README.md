@@ -3,7 +3,7 @@
 In order to extract BIOS payload from Dell BIOS upgrade package you need:
 
 - BIOS Update package
-- [Dell PFS Extract script](https://github.com/platomav/BIOSUtilities/blob/master/Dell%20PFS%20BIOS%20Extractor/Dell_PFS_Extract.py)
+- [Dell PFS Extract script](https://github.com/platomav/BIOSUtilities/blob/master/Dell%20PFS%20Update%20Extractor/Dell_PFS_Extract.py)
 - [UEFITool](https://github.com/LongSoft/UEFITool)
 - [modGRUBShell.efi](https://github.com/datasone/grub-mod-setup_var/releases)
 - [IFRExtract](https://github.com/LongSoft/Universal-IFR-Extractor)
