@@ -33,6 +33,8 @@ On the bottom side of UEFITool you'll find a message such as
 
 `Unicode text "CFG Lock" found in PE32 image section at offset XXYYZZ`
 
+Double-click on the result to go straight to the section in which it was found.
+
 Right click on `PE32 image section`, select `Extract as is` and save the file with `.bin` extension.
 
 ### Step 2: convert .bin file in .txt file
