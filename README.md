@@ -49,6 +49,8 @@ Setting this variable value with `0x00` the `CFG Lock` will be disabled, grantin
 
 ### Step 4: setting CFG Lock to 0x00
 
+#### modGRUBShell.efi
+
 With a modified GRUB shell it's possible to change the value of the variable previously found.
 
 Fire up the modGRUBShell.efi:
@@ -73,9 +75,13 @@ Please note that if you get an errore like `error: offset 0xXYZ is out of range`
 
 Once did it, turn off the PC and turn it on again, not rebooting.
 
+#### RU.efi
+
+Read [RU.efi.md](/ru.efi.md)
+
 ### Step 5: checking if CFG Lock is really unlocked
 
-Repeat **Step 6** and instead of firing up `modGRUBShell.efi`, fire up `VerifyMsrE2.efi`. It will produce an output such as:
+Repeat **Step 6** and instead of firing up `modGRUBShell.efi`, fire up `ControlMsrE2.efi`. It will produce an output such as:
 
 - `This firmware has LOCKED MSR 0xE2 Register!` if CFG Lock isn't unlocked (aka `CFG Lock Offset` value is `0x1`)
 - `This firmware has UNLOCKED MSR 0xE2 Register!` if CFG Lock is unlocked (aka `CFG Lock Offset` value is `0x0`)
