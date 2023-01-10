@@ -122,7 +122,13 @@ Jokes aside:
 
 1. Press `Alt+=`
 2. Scroll down till you reach the `VarStore Name` you previously found (in our example `Setup`)
+
+![VarStore list](/.assets/images/RU.efi/1.png)
+
 3. A matrix like table will popup. Now we need to do some quick maths (Two plus two is four, minus one that's three, quick maths)
+
+![Offset calcs](/.assets/images/RU.efi/2.png)
+
 
 Given the offset we're looking for - in our example `CFG Lock` offset is `0x527` we'll decompose it in `0x520` and `0x7` (quick verify that the sum is `0x527` - at the time of writing I'm still in hangover ffs).
 
