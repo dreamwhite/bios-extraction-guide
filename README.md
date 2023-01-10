@@ -59,12 +59,13 @@ Setting this variable value with `0x00` the `CFG Lock` will be disabled, grantin
 
 ### Step 4: set the value to the offset
 
-There are plenty different ways to set a certain value to a specific variable offset such as:
+There are plenty different tools to set a certain value to a specific variable offset such as:
 
 - [`modGRUBShell.efi`](/modGRUBShell.efi.md)
 - [`RU.efi`](/ru.efi.md)
 - [`setup_var.efi`](/setup_var.efi.md)
 
+My favourite one - mainly because it's open source, has a good maintainer, and it's simple to use - is `setup_var.efi` but you're free to choose the tool you want. 
 ### Step 5: checking if CFG Lock is really unlocked
 
 Repeat **Step 6** and instead of firing up `modGRUBShell.efi`, fire up `ControlMsrE2.efi`. It will produce an output such as:
