@@ -19,9 +19,7 @@ Please note that most of the times the BIOS executable file is ready to be extra
 
 ![Courtesy of Dortania CFG Lock unlocking guide](https://dortania.github.io/OpenCore-Post-Install/assets/img/uefi-tool.5f61054a.png)
 
-5. On the bottom side of UEFITool you'll find a message such as:
-
-`Unicode text "CFG Lock" found in PE32 image section at header-offset XXYYZZ`
+5. On the bottom side of UEFITool you'll find a message such as: `Unicode text "CFG Lock" found in PE32 image section at header-offset XXYYZZ`
 
 6. Double-click on the result to go straight to the section in which it was found.
 
