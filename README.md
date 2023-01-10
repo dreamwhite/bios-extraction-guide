@@ -2,8 +2,6 @@
 
 The aim of this guide is to help users modding their BIOS using the existing features provided by the BIOS itself, such as unlocking the CFG Lock, setting a custom DVMT value, undervolt etc.
 
-Please note that most of the times the BIOS executable file is ready to be extracted using UEFITool, but others may require different ways to extract the BIOS payload.
-
 # Disclaimer
 
 * I am not responsible for bricked devices, dead SSD drives, thermonuclear war, 
@@ -18,6 +16,7 @@ Please note that most of the times the BIOS executable file is ready to be extra
 
 - [Dell](/Dell/README.md)
 - [Lenovo](/Lenovo/README.md)
+- Other vendors may directly give the BIOS payload which can be opened directly from UEFITool (e.g. ASUS, MSI, Gigabyte).
 
 ## Unlock CFG Lock
 
