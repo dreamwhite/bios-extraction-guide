@@ -22,26 +22,33 @@ The aim of this guide is to help users modding their BIOS using the existing fea
 
 ### Step 1: finding PE32 image section CFG Lock offset
 
-1. Drag the payload file (tip, it has the largest size among the other files) inside UEFITool window 
-2. Press search key combination (`Ctrl + F`, if on Windows, or `Command + F`, if on Mac OS)
-3. Select `Text` as search criteria and look for `CFG Lock`
-4. If your BIOS supports CFG Lock functionality, you should have some results in the window as depicted below
+1. Open UEFITool
+2. Drag the payload file (tip, it has the largest size among the other files) inside UEFITool window 
+3. Press search key combination (`Ctrl + F`, if on Windows, or `Command + F`, if on Mac OS)
+4. Select `Text` as search criteria and look for `CFG Lock`
+5. If your BIOS supports CFG Lock functionality, you should have some results in the window as depicted below
 
 ![Courtesy of Dortania CFG Lock unlocking guide](https://dortania.github.io/OpenCore-Post-Install/assets/img/uefi-tool.5f61054a.png)
 
-5. On the bottom side of UEFITool you'll find a message such as: `Unicode text "CFG Lock" found in PE32 image section at header-offset XXYYZZ`
-
-6. Double-click on the result to go straight to the section in which it was found.
-
-7. Right click on `PE32 image section`, select `Extract as is` and save the file with `.bin` extension.
+6. On the bottom side of UEFITool you'll find a message such as: `Unicode text "CFG Lock" found in PE32 image section at header-offset XXYYZZ`
+7. Double-click on the result to go straight to the section in which it was found.
+8. Right click on `PE32 image section`, select `Extract as is` and save the file with `.bin` extension. (e.g. `Section_PE32_image_Setup.bin`)
 
 ### Step 2: convert the `.bin` file in a `.txt` file
 
-With `IFRExtract` you can convert a `.bin` file in a `.txt` file. 
+With [IFRExtractor](https://github.com/LongSoft/IFRExtractor-RS/releases/latest) you can convert a `.bin` file in a `.txt` file. 
 
 On a terminal write: 
 
-`<PATH IFRExtract> <PATH FILE.BIN> setup.txt`
+```bash
+<PATH IFRExtractor> <PATH FILE.BIN> setup.txt
+```
+
+e.g. 
+
+```bash
+<PATH IFRExtractor> Section_PE32_image_Setup.bin Section_PE32_image_Setup.txt
+```
 
 ### Step 3: finding the variable offset
 
