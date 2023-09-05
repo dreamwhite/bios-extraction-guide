@@ -20,6 +20,8 @@ The aim of this guide is to help users modding their BIOS using the existing fea
 
 ## Unlock CFG Lock
 
+##### Please note that this section is hackintosh-only related. If you're a Winblows/Leenux user skip it
+
 ### Step 1: finding PE32 image section CFG Lock offset
 
 1. Open UEFITool
